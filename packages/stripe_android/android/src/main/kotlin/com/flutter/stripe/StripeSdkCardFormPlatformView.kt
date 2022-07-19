@@ -37,9 +37,9 @@ class StripeSdkCardFormPlatformView(
         if (creationParams?.containsKey("defaultValues") == true) {
             cardFormViewManager.setDefaultValues(cardView, ReadableMap(creationParams["defaultValues"] as Map<String, Any>))
         }
-        if (creationParams?.containsKey("postalCodeEnabled") == true) {
-            cardFormViewManager.setPostalCodeEnabled(cardView, creationParams["postalCodeEnabled"] as Boolean)
-        }
+//        if (creationParams?.containsKey("postalCodeEnabled") == true) {
+//            cardFormViewManager.setPostalCodeEnabled(cardView, creationParams["postalCodeEnabled"] as Boolean)
+//        }
         if (creationParams?.containsKey("dangerouslyGetFullCardDetails") == true) {
             cardFormViewManager.setDangerouslyGetFullCardDetails(cardView, creationParams["dangerouslyGetFullCardDetails"] as Boolean)
         }
